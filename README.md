@@ -1,7 +1,5 @@
 # M300-Services
-
 ## Persönlicher Wissenstand
-
 Ich persönlich wusste nicht viel über das Thema "Infrastructure as a code". 
 
 ### Linux
@@ -25,6 +23,13 @@ Bei jedem Modul war die Systemsicherheit ein wichtiger Aspekt. Wir mussten jedes
 ## Lernschritte
 Ich habe zum ersten Mal richtig mit Git Bash und Git Hub gearbeitet. Ich habe schon etwas ähnliches wie Mark Down benützt darum hatte ich eigentlich keine Probleme beim dokumentieren. Ich verstand schnell das Prinzip von Vagrant und wie etwa der Code aussehen soll. Es war bis jetzt mehr oder weniger einfach.
 
+## Vagrant Befehle
+| Vagrant Befehle    | Wirkung           |
+| ------------------ | -----------------:|
+| vagrant up         | Führt das Vagrant File aus |
+| vagrant destroy -f | Löscht die erzeugten Daten des Vagrant Files |
+| vagrant reload     | Reloaded das Vagrant File |
+
 ## Umgebung
 ### Testfälle
 | Was wurde getestet        | Soll-Zustand           | Ist-Zustand  |
@@ -40,8 +45,10 @@ Es wurde eine Firewall mit folgendem Befehl installiert: ```sudo apt-get install
 Die wird dann gleich darauf aktiviert: ```ufw enable```
 
 ### Ports
-Zusätzlich haben ich die Ports 22 und 3306 geöffnet
+Zusätzlich habe ich die Ports 22 und 3306 geöffnet
+
 ```sudo ufw allow from 192.168.0.100 to any port 22```
+
 ```sudo ufw allow from 192.168.55.101 to any port 3306```
 
 ### Reverse Proxy
