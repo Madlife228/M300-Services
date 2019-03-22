@@ -31,13 +31,15 @@ Ich habe zum ersten Mal richtig mit Git Bash und Git Hub gearbeitet. Ich habe sc
 | vagrant reload     | Reloaded das Vagrant File |
 
 ## Umgebung
+Der Webserver läuft auf der IP 192.168.55.100 und der Datenbank Server IP 192.168.55.101. Auf dem Webserver wird der Port 22 und auf dem Datenbank Server der Port 3306 geöffnet.
+
 ### Testfälle
 | Was wurde getestet        | Soll-Zustand           | Ist-Zustand  |
 | ------------------------- |:--------------:| ----:|
 | Vagrant      | Durch das Ausführen des Vagrant Files sollen zwei VMs erstellt werden  | Es wurden zwei unterschiedliche VMs erstellt. Eins für Apache2 und eins für Php |
 | Apache2      | Wenn man auf 127.0.0.1:8080 zugreift sollte man auf eine Seite, welcher vom Webserver gehostet wird gelangen      |  Man gelangt auf die Default Apache2 Seite |
-| Php Authentifikation | Es soll ein Passwort root gesetzt werden und der soll Remote Zugriff haben  | Es gab keine Fehlermeldung bei der Authentifikation |
-| Php Datenbank | Es soll eine Tabelle mit Werten erstellt werden | Es wurde eine Tabelle mit values erstellt, sowie das Erstelldatum |
+| Authentifikation | Es soll ein Passwort root gesetzt werden und der soll Remote Zugriff haben  | Es gab keine Fehlermeldung bei der Authentifikation |
+| Datenbank | Es soll eine Tabelle mit Werten erstellt werden | Es wurde eine Tabelle mit values erstellt, sowie das Erstelldatum |
 
 ## Sicherheitsmassnahmen
 ### Firewall
@@ -63,6 +65,11 @@ sudo a2enmod proxy_http
 ```
 
 Der Befehl ```a2enmod``` sorgt dafür, dass die Module aktiviert werden.
+
+## Reflexion
+Ich finde das Thema "Infrastructure as a Code" noch sehr interessant. Was mich mich daran interessiert ist, dass man aus nur einem File eine ganze Infrastruktur erstellen kann.
+
+Ich selber habe noch sehr viel über die Funktionen und Befehle von Vagrant gelernt. 
 
 
 
