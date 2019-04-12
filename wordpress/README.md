@@ -24,19 +24,19 @@ Es sollte dann folgende Meldung erscheinen:
 ```Creating wordpress-compose_wordpress_1 ... done```
 
 # Weitere Docker Befehle
-# Alle gestoppten Container starten
+Alle gestoppten Container starten
 ```docker-compose start```
 
-# Alle laufende Container stoppen
+Alle laufende Container stoppen
 ```docker-compose stop```
 
-# Konfigurationen validieren und zeigen
+Konfigurationen validieren und zeigen
 ```docker-compose config```
 
-# Alle laufende Container anzeigen
+Alle laufende Container anzeigen
 ```docker-compose ps```
 
-# Alle Container stoppen und entfernen
+Alle Container stoppen und entfernen
 ```docker-compose down```
 
 # Reflexion
