@@ -1,3 +1,6 @@
+# docker-compose.yml
+# Author: Troy Mistca
+# Das File sagt am Docker wie er WordPress und die MariaDB Container starten soll
 wordpress:
     image: wordpress
     links:
