@@ -12,6 +12,8 @@ wordpress:
     volumes:
      - ./code:/code
      - ./html:/var/www/html
+    expose:
+     - "8080"
 mariadb:
     image: mariadb
     environment:
@@ -19,3 +21,4 @@ mariadb:
      - MYSQL_DATABASE=wordpress
     volumes:
      - ./database:/var/lib/mysql
+     
